@@ -30,3 +30,11 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello world"
+
+    # Runs a single command using the runners shell
+    - name: 1st step
+      run: gradle build
+
+    # Runs a single command using the runners shell
+    - name: 2nd step
+      run: clean apiFeatures -Ptags="@Board"
