@@ -29,9 +29,9 @@ jobs:
     steps:
 
     # Runs a single command using the runners shell
-    - name: 1st step
+    - name: Gradle build
       run: gradle build
 
     # Runs a single command using the runners shell
-    - name: 2nd step
+    - name: Run
       run: gradle clean apiFeatures -Ptags="@Calculator"
