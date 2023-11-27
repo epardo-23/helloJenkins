@@ -28,10 +28,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: 1st step
+    - name: Hello world
       run: echo hello world!
-      # run: gradle build
+
+    # Runs a single command using the runners shell
+    - name: 1st step
+      run: gradle build
 
     # Runs a single command using the runners shell
     - name: 2nd step
-      # run: gradle clean apiFeatures -Ptags="@Board"
+      run: gradle clean apiFeatures -Ptags="@Board"
